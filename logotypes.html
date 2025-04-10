@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logotyper – HKL Studio</title>
+    <link href="src/output.css" rel="stylesheet" />
+    <style>
+      @keyframes scroll-x {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-33.333%);
+        }
+      }
+      .scroll-content {
+        animation: scroll-x 60s linear infinite;
+        animation-play-state: running;
+      }
+      .scroll-wrapper:hover .scroll-content {
+        animation-play-state: paused;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white font-figtree px-12">
+
+    <div class="absolute inset-0 z-0">
+        <img src="src/assets/images/bg-pink.jpg" alt="" class="w-full h-full object-cover opacity-40" />
+      </div>
+
+    <!-- Header -->
+    <header class="absolute top-0 left-0 right-0 z-50 flex items-start justify-between py-6 px-12">
+      <a href="index.html" class="block">
+        <img src="src/assets/icons/header-icon.png" alt="HKL Studio logotyp" class="max-w-[610px] h-auto mt-[70px]" />
+      </a>
+      <nav class="relative flex gap-6 text-2xl font-extralight">
+        <a href="index.html" class="relative group">
+            hem
+            <span class="absolute -bottom-1 left-0 w-full h-[2px] bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100 group-hover:origin-right"></span>
+        </a>
+        <a href="index.html#om-mig" class="relative group">
+          om mig
+          <span class="absolute -bottom-1 left-0 w-full h-[2px] bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100 group-hover:origin-right"></span>
+        </a>
+        <a href="index.html#portfolio" class="relative group">
+          portfolio
+          <span class="absolute -bottom-1 left-0 w-full h-[2px] bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100 group-hover:origin-right"></span>
+        </a>
+      </nav>
+    </header>
+
+    <!-- Vertikal text -->
+    <section class="pt-40 min-h-screen flex flex-col lg:flex-row items-center justify-between relative">
+        <div class="z-20 absolute top-40 right-[-40px] flex flex-col gap-2 pr-6 items-start [writing-mode:vertical-rl]">
+            <div class="tracking-widest uppercase text-8xl font-bold whitespace-nowrap self-end font-figtree">
+              Hannes Klingvall Larsson
+            </div>
+              <div class="text-[40px] text-white font-extralight mt-2">
+                webbutvecklare / webdesigner /
+              </div>
+          </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="pt-30 pb-20 ml-[-8px]">
+      <h1 class="text-[200px] font-bold uppercase leading-none text-white font-figtree">LOGOTYPER</h1>
+    </section>
+
+    <!-- Horisontellt bildspel -->
+    <section class="w-full relative px-2 pb-24">
+      <div class="absolute top-0 right-0 w-[240px] h-full bg-gradient-to-l from-black to-black/0 z-10 pointer-events-none"></div>
+      <div class="overflow-hidden relative scroll-wrapper">
+        <div class="scroll-content flex gap-10 w-max">
+
+          <!-- Slide 1 -->
+          <div class="group bg-[#fff] p-10 min-w-[700px] flex flex-col lg:flex-row justify-between items-start gap-10 shadow-md transition-transform duration-500 hover:scale-[1.02]">
+          <div class="text-left max-w-md">
+            <h2 class="text-7xl font-bold text-black mb-4">MODULO DESIGN</h2>
+            <p class="text-black text-md font-extralight leading-relaxed">
+              <span class="font-extralight">En logotyp framtagen för ett fiktivt designkollektiv med fokus på geometri och färg.
+                Formen bygger på enkelhet och balans - cirkeln, triangeln och linjerna skapar ett systematiskt men lekfullt uttryck. Färgerna förstärker den grafiska känslan och ger logotypen en tydlig identitet.
+                </span>
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <img src="src/assets/logos/gallery-image-3.png" alt="Modulo design logotyp" class="w-[400px] h-auto" />
+          </div>
+        </div>
+
+          <!-- Slide 2 -->
+          <div class="group bg-[#fff] p-10 min-w-[700px] flex flex-col lg:flex-row justify-between items-start gap-10 shadow-md transition-transform duration-500 hover:scale-[1.02]">
+          <div class="text-left max-w-md">
+            <h2 class="text-7xl font-bold text-black mb-4">SLATER CLOTHING</h2>
+            <p class="text-black text-md font-extralight leading-relaxed">
+              <span class="font-extralight">Logotyp för ett klädmärke med rötter i surf- och strandkultur.
+                Designen utgår från organiska vågformer och en modern typografi som kombinerar retrokänsla med tydlig karaktär. Den enkla linjegrafiken i logotypen speglar naturens rörelser - stilrent men personligt.</span>
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <img src="src/assets/logos/SlaterClothing.logo.png" alt="Slater Clothing logotyp" class="w-[250px] h-auto" />
+          </div>
+        </div>
+
+          <!-- Slide 3 -->
+          <div class="group bg-[#fff] p-10 min-w-[700px] flex flex-col lg:flex-row justify-between items-start gap-10 shadow-md transition-transform duration-500 hover:scale-[1.02]">
+          <div class="text-left max-w-md">
+            <h2 class="text-7xl font-bold text-black mb-4">RE:<br>FORM</h2>
+            <p class="text-black text-md font-extralight leading-relaxed">
+              <span class="font-extralight">En idé till en visuell identitet för ett kreativt initiativ eller varumärke.
+                Logotypen bygger på cirkulär rörelse och ett sammanflätat uttryck - med fokus på enkelhet, rytm och balans i både form och färg.</span>
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <img src="src/assets/logos/circle1.png" alt="Reform logotyp" class="w-[300px] h-auto" />
+          </div>
+        </div>
+
+          <!-- Slide 1 Duplicate -->
+          <div class="group bg-[#fff] p-10 min-w-[700px] flex flex-col lg:flex-row justify-between items-start gap-10 shadow-md transition-transform duration-500 hover:scale-[1.02]">
+          <div class="text-left max-w-md">
+            <h2 class="text-7xl font-bold text-black mb-4">MODULO DESIGN</h2>
+            <p class="text-black text-md font-extralight leading-relaxed">
+              <span class="font-extralight">En logotyp framtagen för ett fiktivt designkollektiv med fokus på geometri och färg.
+                Formen bygger på enkelhet och balans - cirkeln, triangeln och linjerna skapar ett systematiskt men lekfullt uttryck. Färgerna förstärker den grafiska känslan och ger logotypen en tydlig identitet.
+                </span>
+              
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <img src="src/assets/logos/gallery-image-3.png" alt="Modulo design logotyp" class="w-[400px] h-auto" />
+          </div>
+        </div>
+
+          <!-- Slide 2 Duplicate -->
+          <div class="group bg-[#fff] p-10 min-w-[700px] flex flex-col lg:flex-row justify-between items-start gap-10 shadow-md transition-transform duration-500 hover:scale-[1.02]">
+          <div class="text-left max-w-md">
+            <h2 class="text-7xl font-bold text-black mb-4">SLATER CLOTHING</h2>
+            <p class="text-black text-md font-extralight leading-relaxed">
+              <span class="font-extralight">Logotyp för ett klädmärke med rötter i surf- och strandkultur.
+                Designen utgår från organiska vågformer och en modern typografi som kombinerar retrokänsla med tydlig karaktär. Den enkla linjegrafiken i logotypen speglar naturens rörelser - stilrent men personligt.</span>
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <img src="src/assets/logos/SlaterClothing.logo.png" alt="Slater Clothing logotyp" class="w-[250px] h-auto" />
+          </div>
+        </div>
+
+          <!-- Slide 3 Duplicate -->
+          <div class="group bg-[#fff] p-10 min-w-[700px] flex flex-col lg:flex-row justify-between items-start gap-10 shadow-md transition-transform duration-500 hover:scale-[1.02]">
+          <div class="text-left max-w-md">
+            <h2 class="text-7xl font-bold text-black mb-4">RE:<br>FORM</h2>
+            <p class="text-black text-md font-extralight leading-relaxed">
+              <span class="font-extralight">En idé till en visuell identitet för ett kreativt initiativ eller varumärke.
+                Logotypen bygger på cirkulär rörelse och ett sammanflätat uttryck - med fokus på enkelhet, rytm och balans i både form och färg.</span>
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <img src="src/assets/logos/circle1.png" alt="Reform logotyp" class="w-[300px] h-auto" />
+          </div>
+        </div>
+
+          <!-- Slide 1 Duplicate -->
+          <div class="group bg-[#fff] p-10 min-w-[700px] flex flex-col lg:flex-row justify-between items-start gap-10 shadow-md transition-transform duration-500 hover:scale-[1.02]">
+          <div class="text-left max-w-md">
+            <h2 class="text-7xl font-bold text-black mb-4">MODULO DESIGN</h2>
+            <p class="text-black text-md font-extralight leading-relaxed">
+              <span class="font-extralight">En logotyp framtagen för ett fiktivt designkollektiv med fokus på geometri och färg.
+                Formen bygger på enkelhet och balans - cirkeln, triangeln och linjerna skapar ett systematiskt men lekfullt uttryck. Färgerna förstärker den grafiska känslan och ger logotypen en tydlig identitet.
+                </span>
+              
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <img src="src/assets/logos/gallery-image-3.png" alt="Modulo design logotyp" class="w-[400px] h-auto" />
+          </div>
+        </div>
+
+          <!-- Slide 2 Duplicate -->
+          <div class="group bg-[#fff] p-10 min-w-[700px] flex flex-col lg:flex-row justify-between items-start gap-10 shadow-md transition-transform duration-500 hover:scale-[1.02]">
+          <div class="text-left max-w-md">
+            <h2 class="text-7xl font-bold text-black mb-4">SLATER CLOTHING</h2>
+            <p class="text-black text-md font-extralight leading-relaxed">
+              <span class="font-extralight">Logotyp för ett klädmärke med rötter i surf- och strandkultur.
+                Designen utgår från organiska vågformer och en modern typografi som kombinerar retrokänsla med tydlig karaktär. Den enkla linjegrafiken i logotypen speglar naturens rörelser - stilrent men personligt.</span>
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <img src="src/assets/logos/SlaterClothing.logo.png" alt="Slater Clothing logotyp" class="w-[250px] h-auto" />
+          </div>
+        </div>
+
+          <!-- Slide 3 Duplicate -->
+          <div class="group bg-[#fff] p-10 min-w-[700px] flex flex-col lg:flex-row justify-between items-start gap-10 shadow-md transition-transform duration-500 hover:scale-[1.02]">
+          <div class="text-left max-w-md">
+            <h2 class="text-7xl font-bold text-black mb-4">RE:<br>FORM</h2>
+            <p class="text-black text-md font-extralight leading-relaxed">
+              <span class="font-extralight">En idé till en visuell identitet för ett kreativt initiativ eller varumärke.
+                Logotypen bygger på cirkulär rörelse och ett sammanflätat uttryck - med fokus på enkelhet, rytm och balans i både form och färg.</span>
+            </p>
+          </div>
+          <div class="overflow-hidden">
+            <img src="src/assets/logos/circle1.png" alt="Reform logotyp" class="w-[300px] h-auto" />
+          </div>
+        </div>
+        </div>
+      </div>
+
+      
+    </section>
+
+     <!-- Footer Sektion: Om mig -->
+  <footer id="om-mig" class="relative w-full mt-[200px] px-12 pt-20 pb-10 flex flex-col lg:flex-row gap-12 items-center justify-between">
+
+    <!-- Porträttbild -->
+  <div class="w-full max-w-md border-r-2 border-white ml-auto z-99">
+    <img src="src/assets/images/profile-image.png" alt="Porträtt" class="w-[448px] h-[700px] object-cover overflow-hidden">
+  </div>
+
+  <!-- Text och info -->
+  <div class="max-w-2xl text-white space-y-8">
+    <h2 class="text-[180px] font-bold uppercase whitespace-nowrap leading-none">Om mig</h2>
+    <p class="text-md font-extralight leading-relaxed max-w-[496px] ml-2">
+        ”Jag är en webbutvecklare och designer som brinner för att kombinera form och funktion. Med ett öga för stilren estetik och en känsla för användarupplevelse skapar jag digitala koncept och webbplatser som engagerar – från idé till färdig produkt.<br>Genom kreativt utforskande och tekniskt hantverk strävar jag efter lösningar som både ser fantastiska ut och känns rätt att använda.”
+    </p>
+
+    <div class="flex mt-[270px]">
+      
+      <div class="flex items-center gap-4 text-sm">
+        <img src="src/assets/icons/iconoir_map-pin.png" alt="" class="w-9 h-9" />
+        <span>Baserad i Örebro, <span class="font-semibold">Sverige</span><br>
+        <span class="block mt-1">59°16'1″n 15°11'47″ö</span>
+      </div>
+      
+      <div class="flex items-center gap-6 ml-10">
+        <a href="contact.html" class="ml-26 mr-1 relative group text-[32px] text-black font-bold bg-[#15FF00] w-[220px] h-[68px] flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-105">
+          <span class="relative z-10">KONTAKT</span>
+          <span class="absolute bottom-2 left-6 w-[calc(100%-3rem)] h-[3px] bg-black scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100 group-hover:origin-right"></span>
+        </a>
+        <a href="#" class="text-white text-2xl">
+          <img src="src/assets/icons/instagram-icon.png" alt="Instagram" class="w-9 h-auto" />
+        </a>
+        <a href="#" class="text-white text-2xl">
+          <img src="src/assets/icons/linkedin-icon.png" alt="X" class="w-9 h-auto" />
+        </a>
+      </div>
+
+    </div>
+  </footer> 
+
+  <div class="w-full px-12 py-6 text-center text-sm text-white/60 font-extralight">
+    &copy; 2025 Hannes Klingvall Larsson – HKL Studio
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HKL Portfolio</title>
+    <style>
+    </style>
+    <link href="src/output.css" rel="stylesheet">
+  </head>
+  <body class="bg-black text-white font-figtree px-12">
+
+    <!-- Header -->
+    <header class="absolute top-0 left-0 right-0 z-50 flex items-start justify-between py-6 px-12">
+      <!-- Logga -->
+      <a href="/" class="block">
+        <img src="src/assets/icons/header-icon.png" alt="HKL Studio logotyp" class="max-w-[610px] h-auto mt-[70px]">
+      </a>
+      <!-- Navigation -->
+      <nav class="relative flex gap-6 text-2xl font-extralight">
+        <a href="#om-mig" class="relative group">
+          om mig
+          <span class="absolute -bottom-1 left-0 w-full h-[2px] bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100 group-hover:origin-right"></span>
+        </a>
+        <a href="#portfolio" class="relative group">
+          portfolio
+          <span class="absolute -bottom-1 left-0 w-full h-[2px] bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100 group-hover:origin-right"></span>
+        </a>
+      </nav>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="pt-40 min-h-screen flex flex-col lg:flex-row items-center justify-between relative">
+
+      <!-- Bakgrundsbild -->
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-99 mt-[780px] ml-20">
+        <img src="src/assets/images/hero-image.png" alt="Hero image" class="max-w-[825px] h-auto">
+      </div>
+      
+      <!-- Högerkolumn: Vertikal text -->
+      <div class="z-20 absolute top-40 right-[-40px] flex flex-col gap-2 pr-6 items-start [writing-mode:vertical-rl]">
+        <div class="tracking-widest uppercase text-8xl font-bold whitespace-nowrap self-end font-figtree">
+          Hannes Klingvall Larsson
+        </div>
+          <div class="text-[40px] text-white font-extralight mt-2">
+            webbutvecklare / webdesigner /
+          </div>
+      </div>
+    </section>
+    
+    <!-- Vänsterkolumn: text -->
+    <div class="z-20 max-w-xl flex flex-col gap-6 mt-[150px]">
+      <p class="uppercase text-white text-2xl font-extralight">HTML, CSS, JAVASCRIPT, FIGMA,<br>ADOBE CREATIVE CLOUD</p>
+    </div>
+
+    <div class="flex justify-between items-center mt-[537px] w-full max-w-[1280px]">
+      <!-- Vänstersida: text -->
+        <div class="max-w-[384px]">
+          <p class="text-[16px] text-white font-extralight font-figtree">
+            <span class="font-semibold text-white">precision</span> möter
+            <span class="font-semibold text-white">kreativitet</span> med fokus på funktion,
+            estetik och användarupplevelse. Genom noggrann design och modern webbutveckling
+            formar jag interaktiva lösningar som engagerar och inspirerar.
+          </p>
+        </div>
+  
+      <!-- Högersida: knapp -->
+      <a href="contact.html" class="mr-16 relative group text-[32px] text-black font-bold bg-[#15FF00] w-[220px] h-[68px] flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-105">
+        <span class="relative z-10">KONTAKT</span>
+        <span class="absolute bottom-2 left-6 w-[calc(100%-3rem)] h-[3px] bg-black scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100 group-hover:origin-right"></span>
+      </a>
+    </div>
+    
+    <!-- Fullbredd bakgrund för portfolio -->
+    
+    <section class="relative py-20">
+      <div class="absolute top-60 left-0 -z-10 w-[2170px] h-auto" style="transform: translateX(-300px);">
+        <img src="src/assets/images/gallery-bg.jpg" alt="Bakgrundsmönster" class="w-full h-auto" />
+      </div>
+      
+      <!-- Innehållsgrid -->
+      <div class="relative z-10 flex flex-wrap gap-6 justify-center px-4 mt-[200px]">
+        
+        <!-- LOGOS -->
+        <a href="logotypes.html" class="bg-white text-black font-bold text-8xl flex items-center justify-center text-center w-[700px] h-[356px] transition-transform duration-300 hover:scale-95" id="portfolio">
+          LOGOTYPER
+        </a>
+        <div class="bg-white p-6 flex items-center justify-center">
+          <img src="src/assets/images/gallery-image-3.png" alt="Designs" class="object-cover w-[308px] h-[308px]" />
+        </div>
+
+        <div class="bg-white ml-20 p-6 flex items-center justify-center">
+          <img src="src/assets/images/gallery-image-2.png" alt="Logos" class="object-cover w-[308px] h-[308px]" />
+        </div>
+        
+        <!-- DESIGNS -->
+        <a href="designs.html" class="bg-white text-black font-bold text-8xl flex items-center justify-center text-center w-[700px] h-[356px] transition-transform duration-300 hover:scale-95">
+          DESIGNS
+        </a>
+        
+        <!-- SHOWCASE -->
+        <a href="showcase.html" class="bg-white text-black font-bold text-8xl flex items-center justify-center text-center w-[700px] h-[356px] transition-transform duration-300 hover:scale-95">
+          PROJEKT
+        </a>
+        <div>
+          <img src="src/assets/images/gallery-image-3.jpg" alt="Showcase" class="w-[356px] h-[356px] object-cover" />
+        </div>
+  
+      </div>
+    </section>
+
+        
+    <!-- Footer Sektion: Om mig -->
+  <footer id="om-mig" class="relative w-full mt-40 px-12 pt-20 pb-10 flex flex-col lg:flex-row gap-12 items-center justify-between">
+
+      <!-- Porträttbild -->
+    <div class="w-full max-w-md border-r-2 border-white ml-auto z-99">
+      <img src="src/assets/images/profile-image.png" alt="Porträtt" class="w-[448px] h-[700px] object-cover overflow-hidden">
+    </div>
+
+    <!-- Text och info -->
+    <div class="max-w-2xl text-white space-y-8">
+      <h2 class="text-[180px] font-bold uppercase whitespace-nowrap leading-none">Om mig</h2>
+      <p class="text-md font-extralight leading-relaxed max-w-[496px] ml-2">
+        ”Jag är en webbutvecklare och designer som brinner för att kombinera form och funktion. Med ett öga för stilren estetik och en känsla för användarupplevelse skapar jag digitala koncept och webbplatser som engagerar – från idé till färdig produkt.<br>Genom kreativt utforskande och tekniskt hantverk strävar jag efter lösningar som både ser fantastiska ut och känns rätt att använda.”
+      </p>
+
+      <div class="flex mt-[270px]">
+        
+        <div class="flex items-center gap-4 text-sm">
+          <img src="src/assets/icons/iconoir_map-pin.png" alt="" class="w-9 h-9" />
+          <span>Baserad i Örebro, <span class="font-semibold">Sverige</span><br>
+          <span class="block mt-1">59°16'1″n 15°11'47″ö</span>
+        </div>
+        
+        <div class="flex items-center gap-6 ml-10">
+          <a href="contact.html" class="ml-26 relative group text-[32px] text-black font-bold bg-[#15FF00] w-[220px] h-[68px] flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-105">
+            <span class="relative z-10">KONTAKT</span>
+            <span class="absolute bottom-2 left-6 w-[calc(100%-3rem)] h-[3px] bg-black scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100 group-hover:origin-right"></span>
+          </a>
+          <a href="#" class="text-white text-2xl">
+            <img src="src/assets/icons/instagram-icon.png" alt="Instagram" class="w-9 h-auto" />
+          </a>
+          <a href="#" class="text-white text-2xl">
+            <img src="src/assets/icons/linkedin-icon.png" alt="X" class="w-9 h-auto" />
+          </a>
+        </div>
+      </div>
+    </footer> 
+
+    <div class="w-full px-12 py-6 text-center text-sm text-white/60 font-extralight">
+      &copy; 2025 Hannes Klingvall Larsson – HKL Studio
+    </div>
+    
+  </body>
+</html>
